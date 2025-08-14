@@ -1,27 +1,21 @@
-# Predict Bike Rentals using Weather Data 🚴‍♂️🌦️
 
-This project uses historical weather and calendar data to predict the number of bike rentals. It's based on the UCI Bike Sharing Dataset and demonstrates preprocessing, feature engineering, model training, and evaluation using a Random Forest Regressor.
+# Bike Rental Prediction using Weather and Time Data
 
-## Dataset
-- **day.csv**: Daily summary of bike rentals.
-- **hour.csv**: Hourly bike rental data.
+This project uses the UCI Bike Sharing Dataset (both `day.csv` and `hour.csv`) to predict total bike rentals using weather and time-related features.
 
-## Goal
-Predict the daily count of total rentals (`cnt`) using weather and calendar features.
+## Files Included
+- `day.csv` and `hour.csv`: Raw data files.
+- `bike_rental_model.ipynb`: Jupyter Notebook containing full analysis, preprocessing, modeling, evaluation, and prediction.
+- `bike_rental_predictions.csv`: Final prediction output.
+- `README.md`: Project explanation and setup instructions.
 
-## Methods
-- Feature Engineering (One-hot encoding, Feature scaling)
-- Model: Random Forest Regressor
-- Evaluation Metric: RMSLE
+## Models Used
+- Linear Regression
+- Random Forest Regressor
 
-## Result
-Achieved RMSLE: `~0.33`
+## Evaluation Metric
+- RMSLE (Root Mean Squared Log Error), which balances error across small and large counts.
 
-## Usage
-Run `bike_rental_prediction.ipynb` notebook.
-
-## Project Structure
-Bike_Rentals_Prediction_Project/
-├── data/
-├── notebooks/
-├── output/
+## How to Run
+1. Open the notebook `bike_rental_model.ipynb` in Jupyter Notebook or Google Colab.
+2. Run all cells to reproduce the preprocessing, training, and prediction pipeline.
